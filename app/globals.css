@@ -9,7 +9,8 @@
   /* colors */
   --primary-color: #0070f3; /* Used for main actions, links, etc. */
   --secondary-color: #ff4081; /* Used for secondary actions, highlights */
-  --background-color: #ffgit remote add origin https://github.com/jizu1212/myapp.gitffff; /* Default background */
+  --background-color: #ffgit remote add origin https:
+    //github.com/jizu1212/myapp.gitffff;; /* Default background */
   --surface-color: #5cff6c; /* For cards, modals, etc. */
   --text-color: #333333; /* Main text color */
   --text-light-color: #666666; /* Secondary, less prominent text */
@@ -31,8 +32,7 @@
   /* transition */
   --transition-speed: 0.3s;
 }
-[data-theme="dark"] {
-  /* colors */
+.dark {
   --primary-color: #1e90ff;
   --background-color: #121212;
   --surface-color: #1e1e1e;
@@ -40,7 +40,6 @@
   --text-light-color: #cccccc;
   --border-color: #333333;
 }
-
 html {
   font-size: var(--base-font-size);
 }
