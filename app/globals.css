@@ -1,0 +1,175 @@
+/* global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --primary-color: #0070f3; /* Used for main actions, links, etc. */
+  --secondary-color: #ff4081; /* Used for secondary actions, highlights */
+  --background-color: #ffgit remote add origin https://github.com/jizu1212/myapp.gitffff; /* Default background */
+  --surface-color: #5cff6c; /* For cards, modals, etc. */
+  --text-color: #333333; /* Main text color */
+  --text-light-color: #666666; /* Secondary, less prominent text */
+  --border-color: #e0e0e0; /* Standard border color */
+
+  /* font */
+  --font-family: "Helvetica Neue", Arial, sans-serif;
+  --base-font-size: 16px;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.75rem;
+  --h4-font-size: 1.5rem;
+  --h5-font-size: 1.25rem;
+  --h6-font-size: 1rem;
+
+  /* spacing */
+  --spacing-unit: 8px;
+
+  /* transition */
+  --transition-speed: 0.3s;
+}
+[data-theme="dark"] {
+  /* colors */
+  --primary-color: #1e90ff;
+  --background-color: #121212;
+  --surface-color: #1e1e1e;
+  --text-color: #ffffff;
+  --text-light-color: #cccccc;
+  --border-color: #333333;
+}
+
+html {
+  font-size: var(--base-font-size);
+}
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+}
+p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.muted-text {
+  color: var(--text-light-color);
+}
+.input {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+.card {
+  background-color: var(--surface-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+h1 {
+  font-size: var(--h1-font-size);
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.5em;
+}
+h3 {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  margin-bottom: 0.5em;
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+  margin-bottom: 0.5em;
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+  margin-bottom: 0.5em;
+}
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+button {
+  transition: background-color var(--transition-speed);
+}
+
+/* spacing */
+.mt-1 {
+  margin-top: var(--spacing-unit);
+}
+.mt-2 {
+  margin-top: calc(var(--spacing-unit) * 2);
+}
+.pt-1 {
+  padding-top: var(--spacing-unit);
+}
+.pt-2 {
+  padding-top: calc(var(--spacing-unit) * 2);
+}
+.grid {
+  display: grid;
+  gap: var(--spacing-unit);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* alignment */
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+/* focus */
+
+button:focus,
+a:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
